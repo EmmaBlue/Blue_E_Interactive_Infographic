@@ -1,0 +1,37 @@
+{
+  "name": "blue_e_interactive_infographic",
+  "version": "1.0.0",
+  "description": "interactive infographic on supervised consumption sites",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmaBlue/Blue_E_Interactive_Infographic.git"
+  },
+  "keywords": [
+    "infographic",
+    "animation",
+    "community",
+    "consumption",
+    "sites",
+    "website"
+  ],
+  "author": "Emma Blue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmaBlue/Blue_E_Interactive_Infographic/issues"
+  },
+  "homepage": "https://github.com/EmmaBlue/Blue_E_Interactive_Infographic#readme",
+  "dependencies": {
+    "eslint": "^5.7.0",
+    "sass": "^1.14.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
