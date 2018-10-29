@@ -1,4 +1,87 @@
+@import 'modules/_vars';
+@import 'modules/_london_facts';
+@import 'modules/_site_animation';
+@import 'modules/_tops';
+@import 'modules/_client_impact';
+@import 'modules/_community_impact';
+
+/*Reset*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+.hidden {
+
+    display: none;
+}
+
+.red {
+
+    color: $accent-color;
+}
+
+.border-red {
+
+    border: 2px solid $accent-color;
+}
+
+.bold {
+
+    font-weight: bold;
+    font-family: $font-accent;
+    font-size:1.2em;
+}
+
+.small {
+
+    font-size: 1em;
+}
+
+.big {
+
+    font-size: 1.5em;
+}
+
+.center {
+
+    text-align:center;
+}
+
+.flex {
+
+    display:flex;
+    align-items: flex-start;
+}
+
+object {
+
+    width: 100%;
+}
+
 body {
 
-    background-color: red;
+    background-color: $background-color;
+    
+    p {
+        font-family: $reg-font;
+        color: $font-color;
+        font-size: 1em;
+        line-height: 24px;
+        
+
+    }
+}
+h1, h2 {
+
+    text-align: center;
+    margin: 20px;
+    font-family: $font-accent;
+    font-style: bold;
+    font-size: 1.5em;
+    color: $font-color;
 }

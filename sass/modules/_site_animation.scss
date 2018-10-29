@@ -1,0 +1,59 @@
+#room {
+
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+#grid {
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 1.5em;
+}
+
+.box {
+
+    border: 2px solid $font-color;
+    padding: 20px 10px;
+
+    p {
+
+        font-size: 0.875em;
+    }
+}
+
+#before {
+
+    font-weight: bold;
+    border-bottom: 1px solid $font-color;
+}
+
+#not {
+
+    font-size: 1.125em;
+    text-align:center;
+    font-weight: bold;
+    font-family: $font-accent;
+    margin-top: 1.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 1.5em;
+
+}
+
+.tops {
+
+    text-align:center;
+}
+
+#since {
+
+    font-size: 1.125em;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 1em;
+}
