@@ -1,0 +1,57 @@
+#percentSect {
+
+    border-top: 2px solid $font-color;
+    border-bottom: 2px solid $font-color;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 0px;
+
+}
+
+.intro {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+.percentBlock {
+
+    display:flex;
+    //justify-content: center;
+    align-items: flex-start;
+
+    .percentSize {
+
+        font-size: 2.5em;
+        margin-top: 0.75em;
+        margin-right: -50px;
+    }
+
+    p {
+
+        flex: 1;
+        margin-bottom: 1em;
+    }
+}
+
+.percent-circle {
+
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-top:1.5em;
+    margin-bottom: 1em;
+}
+
+.second {
+
+    margin-bottom: 28px;
+}
+
+.loading {
+
+    padding-left:20px;
+    padding-right:20px;
+}

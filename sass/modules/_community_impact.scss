@@ -1,0 +1,47 @@
+#reductionSect {
+
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.down-arrow {
+
+    width: 20%;
+}
+
+.store {
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -50px;
+}
+
+
+.flex-columns {
+    flex-direction: column;
+    display: flex;
+}
+
+#sydneySect {
+
+    margin-left: 40px;
+    margin-right: 30px;
+    margin-bottom: 1em;
+
+    ul {
+
+        margin-left: 20px;
+        margin-top: 1em;
+
+        li {
+
+            font-family: $reg-font;
+            font-size: 1em;
+            color: $font-color;
+            margin-bottom: 0.5em;
+        
+        }
+    }
+}
