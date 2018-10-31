@@ -9,7 +9,57 @@
 
     width: 100%;
 
+    .cls-1  {
+        fill:none;
+        stroke:#000;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-width:1.75px;
+    }
+
+
 }
+
+
+
+//Switching Heartlines Depending on Screen Size
+
+@media screen and (max-width: 767px) {
+
+    #beat2 {
+
+        display: none;
+    }
+    #beat4 {
+
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #beat1 {
+
+        display: none;
+    }
+
+    #beat2 {
+
+        display: block;
+    }
+
+    #beat3 {
+
+        display: none;
+    }
+
+    #beat4 {
+
+        display: block;
+    }
+}
+
+
 
 .frontSect {
 
@@ -72,5 +122,41 @@
     display: block;
 }
 
+/* Tablet and Desktop Media Queries*/
 
+@media screen and (min-width: 768px) {
 
+    .desc  {
+
+        text-align:center;
+    }
+
+    h2.sectionHeading {
+
+        margin-bottom: 1.25em;
+    }
+
+    #scrollText {
+
+        margin-top: 2.25em;
+    }
+
+    #mainHeading {
+
+        font-size: 3.25em;
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .widen  {
+
+        align-items: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+}

@@ -2,33 +2,61 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
         <link href="css/main.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
         <title>These Sites Save Lives</title>
 </head>
 <body>
     <h1 id="mainHeading">These sites save <span class="red">lives.</span></h1>
     <main>
-        <section> 
+        <section id="firstSect"> 
             <h2 class="hidden">London Opioid Crisis Stats</h2>
-            <object class="heartBeat" type="image/svg+xml" data="images/heartline.svg">
+            <!--<object id="heart1" class="heartBeat" type="image/svg+xml" data="">
                 <img src="fallback-image.png" alt="…">
-            </object>
-            <section class="frontSect">
-                <h2 class="hidden">London is 3rd Highest Rate of Opioid Overdose</h2>
-                <object id="hospital" type="image/svg+xml" data="images/hospital.svg">
-                    <img src="fallback-image.png" alt="…">
-                </object>
-                <p class="right"><span id="hospitalLeft">London has </span><span class="mid"><span class="red bold">the 3rd highest rate</span> of hospitalizations due to opioid poisoning</span> <span class="bold mid">in the country.</span></p>
-            </section>
-            <section class="frontSect">
-                <h2 class="hidden">400 Deaths in London</h2>
-                <p class="bold red" id="numberDeaths">400</p>
-                <p class="right">people in London have <span class="bold" id="diedBig">died in the last decade</span> from an opioid overdose.</p>
-            </section>
+            </object>-->
+            <svg id="beat1" class="heartBeat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.75 56.75">
+                <title>Heart Beat</title>
+                <clipPath id="lineClip">
+                    <rect id="svgRect" x="0" y="0" height="500" width="0"/>
+                </clipPath>
+                <g id="Layer_2" data-name="Layer 2" clip-path="url(#lineClip)">
+                    <g id="heart_line" data-name="heart line">
+                        <polyline class="cls-1" points="0.88 24.88 100.54 24.88 105.91 11.88 110.2 41.88 112.35 24.88 116.64 24.88 119.86 7.88 127.38 39.88 133.82 24.88 140.26 24.88 141.33 21.88 144.55 31.88 146.7 24.88 150.99 32.88 157.43 7.88 160.65 46.88 163.87 20.88 167.09 24.88 185.34 24.88 189.64 13.88 196.08 40.88 202.52 0.88 207.88 25.88 213.25 20.88 220.76 50.88 229.35 6.88 239.01 51.88 240.09 24.88 257.26 24.88 258.33 47.88 262.63 22.88 268 34.88 271.21 27.88 274.44 38.88 277.66 33.88 280.88 38.88 286.24 15.88 292.68 55.88 294.83 24.88 302.34 24.88 307.71 24.88 309.86 32.88 313.08 21.88 324.89 49.88 332.4 8.88 339.91 34.88 343.13 30.88 348.5 50.88 351.72 14.88 354.94 24.88 367.82 24.88 372.12 8.88 380.7 34.88 383.92 21.88 393.58 51.88 402.17 9.88 402.17 9.88 407.88 24.88"/>
+                    </g>
+                </g>
+            </svg>
+            <svg id="beat2" class="heartBeat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1388.31 60.75">
+                <title>Heart Beat Clip</title>
+                <clipPath id="lineClip2">
+                        <rect id="svgRect2" x="0" y="0" height="500" width="100"/>
+                    </clipPath>
+                <g id="Layer_2" data-name="Layer 2" clip-path="url(#lineClip2)">
+                <g id="heart_line" data-name="heart line">
+                <polyline class="cls-1" points="795.17 13.88 795.17 13.88 786.59 55.88 776.92 25.88 773.7 38.88 765.12 12.88 760.82 28.88 747.94 28.88 744.72 18.88 741.5 54.88 736.13 34.88 732.91 38.88 725.4 12.88 717.89 53.88 706.08 25.88 702.86 36.88 700.71 28.88 695.34 28.88 687.83 28.88 685.68 59.88 679.24 19.88 673.88 42.88 670.66 37.88 667.44 42.88 664.22 31.88 661 38.88 655.63 26.88 651.33 51.88 650.26 28.88 633.09 28.88 632.01 55.88 622.35 10.88 613.76 54.88 606.25 24.88 600.88 29.88 595.52 4.88 589.08 44.88 582.64 17.88 578.34 28.88 560.09 28.88 556.87 24.88 553.65 50.88 550.43 11.88 543.99 36.88 539.7 28.88 537.55 35.88 534.33 25.88 533.26 28.88 526.82 28.88 520.38 43.88 512.86 11.88 509.64 28.88 505.35 28.88 503.2 45.88 498.91 15.88 493.54 28.88 0.88 28.88"/>
+                <polyline class="cls-1" points="795.17 13.88 795.17 13.88 799.47 43.88 801.61 26.88 805.91 26.88 809.13 9.88 816.64 41.88 823.08 26.88 829.52 26.88 830.6 23.88 833.82 33.88 835.96 26.88 840.25 34.88 846.7 9.88 849.92 48.88 853.14 22.88 856.36 26.88 874.61 26.88 878.9 15.88 885.34 42.88 891.78 2.88 897.15 27.88 902.51 22.88 910.03 52.88 918.62 8.88 928.27 53.88 929.35 26.88 946.52 26.88 947.6 49.88 951.89 24.88 957.26 36.88 960.48 29.88 963.7 40.88 966.92 35.88 970.14 40.88 975.51 17.88 981.95 57.88 984.09 26.88 991.61 26.88 996.97 26.88 999.12 34.88 1002.34 23.88 1014.15 51.88 1021.66 10.88 1029.18 36.88 1032.4 32.88 1037.76 52.88 1040.98 16.88 1044.2 26.88 1057.09 26.88 1061.38 10.88 1069.97 36.88 1073.19 23.88 1082.85 53.88 1091.43 11.88"/>
+                <polyline class="cls-1" points="1091.17 11.88 1091.17 11.88 1095.47 41.88 1097.61 24.88 1101.91 24.88 1105.13 7.88 1112.64 39.88 1119.08 24.88 1125.52 24.88 1126.6 21.88 1129.82 31.88 1131.96 24.88 1136.26 32.88 1142.7 7.88 1145.92 46.88 1149.14 20.88 1152.36 24.88 1170.61 24.88 1174.9 13.88 1181.34 40.88 1187.78 0.88 1193.15 25.88 1198.51 20.88 1206.03 50.88 1214.62 6.88 1224.28 51.88 1225.35 24.88 1242.52 24.88 1243.6 47.88 1247.89 22.88 1253.26 34.88 1256.48 27.88 1259.7 38.88 1262.92 33.88 1266.14 38.88 1271.51 15.88 1277.95 55.88 1280.09 24.88 1287.61 24.88 1292.97 24.88 1295.12 32.88 1298.34 21.88 1310.15 49.88 1317.66 8.88 1325.18 34.88 1328.4 30.88 1333.76 50.88 1336.98 14.88 1340.2 24.88 1353.09 24.88 1357.38 8.88 1365.97 34.88 1369.19 21.88 1378.85 51.88 1387.43 9.88"/>
+                </g>
+                </g>
+            </svg>
+            <div class="turn-flex widen">
+                <section class="frontSect">
+                    <h2 class="hidden">London is 3rd Highest Rate of Opioid Overdose</h2>
+                    <object id="hospital" type="image/svg+xml" data="images/hospital.svg">
+                        <img src="fallback-image.png" alt="…">
+                    </object>
+                    <p class="right"><span id="hospitalLeft">London has </span><span class="mid"><span class="red bold">the 3rd highest rate</span> of hospitalizations due to opioid poisoning</span> <span class="bold mid">in the country.</span></p>
+                </section>
+                <section class="frontSect">
+                    <h2 class="hidden">400 Deaths in London</h2>
+                    <p class="bold red" id="numberDeaths">400</p>
+                    <p class="right">people in London have <span class="bold" id="diedBig">died in the last decade</span> from an opioid overdose.</p>
+                </section>
+            </div>
             <p class="desc">Yet, most Londoners don't know the facts on <span class="bold small" id="sitesBold">supervised consumption sites</span> or <span class="bold red small" id="evidenceRed">the overwhelming amount of evidence</span> in their favour.</p>
             <p id="scrollText"> <span class="line">Want to find out?</span> Scroll down for more</p>
             <i class="fas fa-angle-down"></i>
@@ -36,83 +64,107 @@
 
         <section>
             <h2 class="sectionHeading">Supervised consumption sites are a place to</h2>
-            <object id="room" type="image/svg+xml" data="images/room.svg">
-                <img src="fallback-image.png" alt="…">
-            </object>
-            <div id="grid">
-                <section class="box">
-                    <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
-                    <p>Bring drugs obtained <span id="before">before</span> coming to the site </p>
+            <div class="turn-flex">
+                <section id="roomSect">
+                    <img id="room" class="roomSVG" src="images/room.svg" alt="room" width="100%">
                 </section>
-                <section class="box border-red">
-                    <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
-                    <p>Receive clean needles and other sterile equipment </p>
-                </section>
-                <section class="box border-red">
-                    <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
-                    <p>Get advice from medical professionals on how to use safely</p>
-                </section>
-                <section class="box">
-                    <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
-                    <p>Get healthcare if an overdose happens</p>
-                </section>
-                <section class="box">
-                    <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
-                    <p>Use drugs without fear of being arrested</p>
-                </section>
-                <section class="box border-red">
-                    <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
-                    <p>Get referrals to services like therapy, rehab and more</p>
-                </section>
-            </div>
+                <div id="grid">
+                    <section id="bring" class="box">
+                        <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
+                        <p>Bring drugs obtained <span id="before">before</span> coming to the site </p>
+                    </section>
+                    <section id="equipment" class="box border-red">
+                        <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
+                        <p>Receive clean needles and other sterile equipment </p>
+                    </section>
+                    <section id="doctor" class="box border-red">
+                        <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
+                        <p>Get advice from medical professionals on how to use safely</p>
+                    </section>
+                    <section id="healthcare" class="box">
+                        <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
+                        <p>Get healthcare if an overdose happens</p>
+                    </section>
+                    <section id="cozy" class="box">
+                        <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
+                        <p>Use drugs without fear of being arrested</p>
+                    </section>
+                    <section id="social-worker" class="box border-red">
+                        <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
+                        <p>Get referrals to services like therapy, rehab and more</p>
+                    </section>
+                    </div>
+                </div>
             <p id="not">Supervised consumption sites are <span class="red">not a place to buy or receive drugs.</span></p>
         </section>
         <section>
             <h2 class="hidden">London Temporary Overdose Prevention Site Stats</h2>
-            <object class="heartBeat" type="image/svg+xml" data="images/heartline.svg">
-                <img src="fallback-image.png" alt="…">
-            </object>
+            <svg id="beat3" class="heartBeat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.75 56.75">
+                <title>Heart Beat</title>
+                <clipPath id="lineClip3">
+                    <rect id="svgRect3" x="0" y="0" height="500" width="0"/>
+                </clipPath>
+                <g id="Layer_2" data-name="Layer 2" clip-path="url(#lineClip3)">
+                    <g id="heart_line" data-name="heart line">
+                        <polyline class="cls-1" points="0.88 24.88 100.54 24.88 105.91 11.88 110.2 41.88 112.35 24.88 116.64 24.88 119.86 7.88 127.38 39.88 133.82 24.88 140.26 24.88 141.33 21.88 144.55 31.88 146.7 24.88 150.99 32.88 157.43 7.88 160.65 46.88 163.87 20.88 167.09 24.88 185.34 24.88 189.64 13.88 196.08 40.88 202.52 0.88 207.88 25.88 213.25 20.88 220.76 50.88 229.35 6.88 239.01 51.88 240.09 24.88 257.26 24.88 258.33 47.88 262.63 22.88 268 34.88 271.21 27.88 274.44 38.88 277.66 33.88 280.88 38.88 286.24 15.88 292.68 55.88 294.83 24.88 302.34 24.88 307.71 24.88 309.86 32.88 313.08 21.88 324.89 49.88 332.4 8.88 339.91 34.88 343.13 30.88 348.5 50.88 351.72 14.88 354.94 24.88 367.82 24.88 372.12 8.88 380.7 34.88 383.92 21.88 393.58 51.88 402.17 9.88 402.17 9.88 407.88 24.88"/>
+                    </g>
+                </g>
+            </svg>
+            <svg id="beat4" class="heartBeat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1388.31 60.75">
+                <title>Heart Beat Clip</title>
+                <clipPath id="lineClip4">
+                        <rect id="svgRect4" x="0" y="0" height="500" width="0"/>
+                    </clipPath>
+                <g id="Layer_2" data-name="Layer 2" clip-path="url(#lineClip4)">
+                <g id="heart_line" data-name="heart line">
+                <polyline class="cls-1" points="795.17 13.88 795.17 13.88 786.59 55.88 776.92 25.88 773.7 38.88 765.12 12.88 760.82 28.88 747.94 28.88 744.72 18.88 741.5 54.88 736.13 34.88 732.91 38.88 725.4 12.88 717.89 53.88 706.08 25.88 702.86 36.88 700.71 28.88 695.34 28.88 687.83 28.88 685.68 59.88 679.24 19.88 673.88 42.88 670.66 37.88 667.44 42.88 664.22 31.88 661 38.88 655.63 26.88 651.33 51.88 650.26 28.88 633.09 28.88 632.01 55.88 622.35 10.88 613.76 54.88 606.25 24.88 600.88 29.88 595.52 4.88 589.08 44.88 582.64 17.88 578.34 28.88 560.09 28.88 556.87 24.88 553.65 50.88 550.43 11.88 543.99 36.88 539.7 28.88 537.55 35.88 534.33 25.88 533.26 28.88 526.82 28.88 520.38 43.88 512.86 11.88 509.64 28.88 505.35 28.88 503.2 45.88 498.91 15.88 493.54 28.88 0.88 28.88"/>
+                <polyline class="cls-1" points="795.17 13.88 795.17 13.88 799.47 43.88 801.61 26.88 805.91 26.88 809.13 9.88 816.64 41.88 823.08 26.88 829.52 26.88 830.6 23.88 833.82 33.88 835.96 26.88 840.25 34.88 846.7 9.88 849.92 48.88 853.14 22.88 856.36 26.88 874.61 26.88 878.9 15.88 885.34 42.88 891.78 2.88 897.15 27.88 902.51 22.88 910.03 52.88 918.62 8.88 928.27 53.88 929.35 26.88 946.52 26.88 947.6 49.88 951.89 24.88 957.26 36.88 960.48 29.88 963.7 40.88 966.92 35.88 970.14 40.88 975.51 17.88 981.95 57.88 984.09 26.88 991.61 26.88 996.97 26.88 999.12 34.88 1002.34 23.88 1014.15 51.88 1021.66 10.88 1029.18 36.88 1032.4 32.88 1037.76 52.88 1040.98 16.88 1044.2 26.88 1057.09 26.88 1061.38 10.88 1069.97 36.88 1073.19 23.88 1082.85 53.88 1091.43 11.88"/>
+                <polyline class="cls-1" points="1091.17 11.88 1091.17 11.88 1095.47 41.88 1097.61 24.88 1101.91 24.88 1105.13 7.88 1112.64 39.88 1119.08 24.88 1125.52 24.88 1126.6 21.88 1129.82 31.88 1131.96 24.88 1136.26 32.88 1142.7 7.88 1145.92 46.88 1149.14 20.88 1152.36 24.88 1170.61 24.88 1174.9 13.88 1181.34 40.88 1187.78 0.88 1193.15 25.88 1198.51 20.88 1206.03 50.88 1214.62 6.88 1224.28 51.88 1225.35 24.88 1242.52 24.88 1243.6 47.88 1247.89 22.88 1253.26 34.88 1256.48 27.88 1259.7 38.88 1262.92 33.88 1266.14 38.88 1271.51 15.88 1277.95 55.88 1280.09 24.88 1287.61 24.88 1292.97 24.88 1295.12 32.88 1298.34 21.88 1310.15 49.88 1317.66 8.88 1325.18 34.88 1328.4 30.88 1333.76 50.88 1336.98 14.88 1340.2 24.88 1353.09 24.88 1357.38 8.88 1365.97 34.88 1369.19 21.88 1378.85 51.88 1387.43 9.88"/>
+                </g>
+                </g>
+            </svg>
             <p id="since"class="tops">Since London’s temporary overdose prevention site opened in <span class="bold small">mid February</span></p>
-            <object class="people" type="image/svg+xml" data="images/people.svg">
+            <object id="people" type="image/svg+xml" data="">
                 <img src="fallback-image.png" alt="…">
             </object>
             <p class="center"><span class="bold big red">2000</span> people have visited <span class="bold big">8000</span> times</p>
-            <object class="hearts" type="image/svg+xml" data="images/hearts.svg">
+        
+            <object id="hearts" type="image/svg+xml" data="">
                 <img src="fallback-image.png" alt="…">
             </object>
             <p class="center">Staff have <span class="bold small">reversed </span><span class="bold big red">37</span><span class="bold small"> overdoses</span></p>
-            <i class="fas fa-angle-down"></i>
+            <i id="arrow-two" class="fas fa-angle-down"></i>
         </section>
         <section>
             <h2>How do these sites impact people who use drugs?</h2>
-            <p class="intro" class="center">According to research done on InSite, a supervised consumption site in Vancouver that's existed <span class="bold red small">since 2003</span></p>
-            <section id="percentSect">
+            <p class="intro center">According to research done on InSite, a supervised consumption site in Vancouver that's existed <span class="bold red small">since 2003</span></p>
+            <section class="turn-flex" id="percentSect">
                 <h2 class="hidden">Client Stats</h2>
                 <section class="percentBlock">
                     <h2 class="hidden">Client Impact Percentages</h2>
                     <p class="bold red percentSize">75%</p>
-                    <p>of clients reported <span class="bold small">a change in their injecting</span> because of InSite’s services</p>
+                    <p class="percentDesc">of clients reported <span class="bold small">a change in their injecting</span> because of InSite’s services</p>
                 </section>
                 <section class="percentBlock">
                     <h2 class="hidden">Client Impact Percentages</h2>
                     <p class="bold percentSize">23%</p>
-                    <p>of one study’s respondents <span class="bold small">stopped injecting</span> at the end of the study period</p>
+                    <p class="percentDesc">of one study’s respondents <span class="bold small">stopped injecting</span> at the end of the study period</p>
                 </section>
                 <section class="percentBlock">
                     <h2 class="hidden">Client Impact Percentages</h2>
                     <p class="bold red percentSize">57%</p>
-                    <p>of those clients<span class="bold small"> entered addiction treatment</span></p>
+                    <p class="percentDesc">of those clients<span class="bold small"> entered addiction treatment</span></p>
                 </section>
             </section>
-            <div class="flex">
-                <section class="circleSect">
+            <div class="socSect flex">
+                <section class="circleSect turn-flex">
                     <h2 class="hidden">Social Service Access Stats</h2>
                     <object class="percent-circle" type="image/svg+xml" data="images/ninety-four.svg">
                         <img src="fallback-image.png" alt="ninety-four">
                     </object>
                     <p class="center loading">of clients accessed non medical services on site</p>
                 </section>
-                <section class="circleSect">
+                <section class="circleSect turn-flex">
                     <h2 class="hidden">Social Service Access Stats</h2>
                     <object class="percent-circle second" type="image/svg+xml" data="images/forty-four.svg">
                         <img src="fallback-image.png" alt="forty-four">
@@ -125,26 +177,26 @@
         <section>
             <h2>How do these sites affect the community?</h2>
             <p class="intro center">Out of the <span class="red bold small">75%</span> of clients who reported a change in their injecting because of InSite </p>
-            <div class="flex">
-                <section class="circleSect">
+            <div class="socSect socCircles flex">
+                <section class="circleSect turn-flex">
                     <h2 class="hidden">Community Safety Stats</h2>
                     <object class="percent-circle" type="image/svg+xml" data="images/seventy-one.svg">
                         <img src="fallback-image.png" alt="forty-four">
                     </object>
-                    <p class="center">reported fewer public injections</p>
+                    <p class="center loading">reported fewer public injections</p>
                 </section>
-                <section class="circleSect">
+                <section class="circleSect turn-flex">
                     <h2 class="hidden">Community Safety Stats</h2>
                     <object class="percent-circle" type="image/svg+xml" data="images/fifty-six.svg">
                         <img src="fallback-image.png" alt="fifty-six">
                     </object>
-                    <p class="center">reported less unsafe needle disposal</p>
+                    <p class="center loading">reported less unsafe needle disposal</p>
                 </section>
             </div>
             <section class="flex" id="reductionSect">
                 <h2 class="hidden">Community Safety Stats</h2>
-                <p>InSite caused more than a <span class="red bold fifty"> 50% </span><span><span class="bold">reduction in discarded needles</span> discovered in Vancouver's downtown </span>east side</p>
-                <object class="down-arrow" type="image/svg+xml" data="images/down-arrow.svg">
+                <p class="justify">InSite caused more than a <span class="red bold fifty"> 50% </span><span><span class="bold">reduction in discarded needles</span> discovered in Vancouver's downtown </span>east side</p>
+                <object class="down-arrow justify" type="image/svg+xml" data="images/down-arrow.svg">
                     <img src="fallback-image.png" alt="fifty-six">
                 </object>
             </section>
@@ -175,6 +227,9 @@
 
 <!--javascript includes-->
 <script src="js/main.js"></script>
+<script src="js/responsive.js"></script>
+<script src="js/heartbeat.js"></script>
+<script src="js/animate-on-load.js"></script>
 </body>
 
 </html>

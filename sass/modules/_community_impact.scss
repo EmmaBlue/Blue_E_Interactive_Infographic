@@ -15,7 +15,7 @@
 
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: -50px;
+    //margin-top: -50px;
 }
 
 
@@ -43,5 +43,20 @@
             margin-bottom: 0.5em;
         
         }
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    #reductionSect {
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .down-arrow {
+
+        width: 5em;
+        margin-left: 20px;
     }
 }

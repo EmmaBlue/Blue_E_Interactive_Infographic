@@ -1,3 +1,7 @@
+#roomSect {
+
+    position: relative;
+}
 #room {
 
     width: 50%;
@@ -19,11 +23,20 @@
 
     border: 2px solid $font-color;
     padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     p {
 
         font-size: 0.875em;
+        text-align: left;
     }
+}
+
+.box:hover {
+
+    color:red;
 }
 
 #before {
@@ -45,15 +58,63 @@
 
 }
 
-.tops {
+/*room SVG styles*/
 
-    text-align:center;
+#bring-pic {
+
+    position: absolute;
+    width: 7%;
+    bottom: 70px;
+    left: 50%;
 }
 
-#since {
+#equipment-pic {
 
-    font-size: 1.125em;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 1em;
+    position: absolute;
+    width: 13%;
+    bottom: 100px;
+    left: 62%;
 }
+
+#doctor-pic {
+
+    position: absolute;
+    width: 9%;
+    bottom: 32px;
+    left: 35%;
+}
+
+#healthcare-pic {
+
+    position: absolute;
+    width: 10%;
+    bottom: 18px;
+    left: 44%;
+}
+
+
+
+@media screen and (min-with:768px) {
+
+    #room {
+
+        margin-left: 10%;
+    }
+
+    #grid {
+
+        margin-right: 10%;
+    }
+
+    .sectionHeading {
+
+        margin-bottom: 40px;
+    }
+
+    #not {
+
+        font-size: 1.75em;
+    }
+
+}
+
