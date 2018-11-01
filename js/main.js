@@ -32,6 +32,8 @@
         //take the database data and put it on the page 
             let svg = document.createElement("IMG");
             svg.classList.add("roomSVG");
+            svg.classList.add("animated");
+            svg.classList.add("fadeIn");
             svg.src = img_path;
             svg.id = name + "-pic";
             section.appendChild(svg);

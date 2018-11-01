@@ -134,6 +134,7 @@
     h2.sectionHeading {
 
         margin-bottom: 1.25em;
+        margin-top: 1.25em;
     }
 
     #scrollText {
@@ -159,4 +160,13 @@
         margin-right: 20%;
     }
 
+}
+
+@media screen and (min-width: 1380px) {
+
+    #numberDeaths {
+
+        font-size: 4em;
+        padding-bottom: 30px;
+    }
 }

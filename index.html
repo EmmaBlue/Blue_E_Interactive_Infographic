@@ -5,16 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
         <link href="css/main.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
         <title>These Sites Save Lives</title>
 </head>
 <body>
-    <h1 id="mainHeading">These sites save <span class="red">lives.</span></h1>
     <main>
         <section id="firstSect"> 
+            <h1 class="animated fadeInUp" id="mainHeading">These sites save <span class="red animated fadeInRight">lives.</span></h1>
             <h2 class="hidden">London Opioid Crisis Stats</h2>
             <!--<object id="heart1" class="heartBeat" type="image/svg+xml" data="">
                 <img src="fallback-image.png" alt="…">
@@ -59,12 +61,12 @@
             </div>
             <p class="desc">Yet, most Londoners don't know the facts on <span class="bold small" id="sitesBold">supervised consumption sites</span> or <span class="bold red small" id="evidenceRed">the overwhelming amount of evidence</span> in their favour.</p>
             <p id="scrollText"> <span class="line">Want to find out?</span> Scroll down for more</p>
-            <i class="fas fa-angle-down"></i>
+            <i class="fas fa-angle-down animated infinite pulse"></i>
         </section>
 
         <section>
             <h2 class="sectionHeading">Supervised consumption sites are a place to</h2>
-            <div class="turn-flex">
+            <div id="row" class="turn-flex">
                 <section id="roomSect">
                     <img id="room" class="roomSVG" src="images/room.svg" alt="room" width="100%">
                 </section>
@@ -133,7 +135,7 @@
                 <img src="fallback-image.png" alt="…">
             </object>
             <p class="center">Staff have <span class="bold small">reversed </span><span class="bold big red">37</span><span class="bold small"> overdoses</span></p>
-            <i id="arrow-two" class="fas fa-angle-down"></i>
+            <i id="arrow-two" class="fas fa-angle-down animated infinite pulse"></i>
         </section>
         <section>
             <h2>How do these sites impact people who use drugs?</h2>
@@ -172,7 +174,7 @@
                     <p class="center loading">of clients accessed medical services on site</p>
                 </section>
             </div>
-            <i class="fas fa-angle-down"></i>
+            <i class="fas fa-angle-down animated infinite pulse"></i>
         </section>
         <section>
             <h2>How do these sites affect the community?</h2>
@@ -221,7 +223,7 @@
                 </div>
             <p class="center loading">and <span class="bold">no change</span> in drug-related criminal offences in the neighbourhood.</p>
          </section>
-            <i class="fas fa-angle-down"></i>
+            <i class="fas fa-angle-down animated infinite pulse"></i>
         </section>
     </main>
 

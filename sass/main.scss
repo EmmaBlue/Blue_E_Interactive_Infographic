@@ -4,6 +4,7 @@
 @import 'modules/_tops';
 @import 'modules/_client_impact';
 @import 'modules/_community_impact';
+@import 'modules/_animation_styles';
 
 /*Reset*/
 *,
@@ -59,6 +60,13 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    #row.turn-flex  {
+
+        display: flex;
+        margin: auto;
+        max-width: 900px;
+    }
 
     .turn-flex  {
 
