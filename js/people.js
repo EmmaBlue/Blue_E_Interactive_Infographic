@@ -16,7 +16,7 @@
             }
           
         },
-        offset: 200
+        offset: 220
     });
 
      // define a  waypoint and run some animation
@@ -30,7 +30,7 @@
             }
 
         },
-        offset: 200
+        offset: 220
     });
 
     function runAnimation(parent, elements) {
@@ -52,4 +52,4 @@
          
         });
     }
-})();
+})(); 
