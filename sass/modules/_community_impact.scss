@@ -1,3 +1,16 @@
+#commSect {
+
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 3em;
+
+    .flex {
+
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 #reductionSect {
 
     margin-top: 1.5em;
@@ -15,7 +28,7 @@
 
     margin-left: 20px;
     margin-right: 20px;
-    //margin-top: -50px;
+    height: 100px;
 }
 
 
@@ -34,6 +47,7 @@
 
         margin-left: 20px;
         margin-top: 1em;
+        margin-top: 0.5em;
 
         li {
 
@@ -46,6 +60,40 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+
+    #commSect {
+
+
+
+        .flex .flex-columns {
+
+            flex-direction: row;
+
+        
+        }
+
+    
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .store {
+
+        margin-right: 0px;
+        width: 120px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .store {
+
+        height: 200px;
+        width: 200px;
+    }
+}
 @media screen and (min-width:768px) {
 
     #reductionSect {

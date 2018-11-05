@@ -1,9 +1,33 @@
-#mainHeading.animated.fadeInUp {
+/*#mainHeading.animated.fadeInUp {
     animation-duration: 0.5s;
 
     span.animated.fadeInRight {
 
         animation-duration:1s;
     }
+  }*/
+
+#factsp.animated.fadeInUp {
+
+    animation-delay: 8s;
   }
 
+  #scrollText.animated.fadeInUp {
+
+    animation-delay: 9s;
+  }
+
+  #scrollArrow.fas.fa-angle-down.animated.fadeInUp {
+
+    animation-delay: 9s;
+  }
+
+  #deathsSect.animated.fadeInDown {
+
+    animation-delay: 6s; 
+
+    span.animated.fadeInUp {
+
+        animation-delay: 7s; 
+    }
+  }

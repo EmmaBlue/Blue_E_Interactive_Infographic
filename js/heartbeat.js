@@ -9,8 +9,8 @@
             duration2 = 3,
             lineWidth = 767,
             lineWidth2 = 2000, 
-            start = new TimelineMax();
-            start2 = new TimelineMax();
+            start = new TimelineMax({paused: true});
+            start2 = new TimelineMax({paused: true});
 
         var rect1 = document.querySelector("#svgRect"),
             rect2 = document.querySelector("#svgRect2"),
@@ -21,10 +21,12 @@
             console.log(fullVers);
 
 
-                start.to(rect1, duration, {width: lineWidth, ease: Power0.easeNone});
+                start.to(rect1, duration, {width: lineWidth, ease: Power0.easeNone}, 2);
+                start.restart();
 
 
-                start2.to(rect2, duration2, {width: lineWidth2, ease: Power0.easeNone});
+                start2.to(rect2, duration2, {width: lineWidth2, ease: Power0.easeNone}, 2);
+                start2.restart();
                
 
     }
@@ -38,13 +40,12 @@
           var duration = 5,
               lineWidth = 767, 
               lineWidth2 = 2000, 
-              start3 = new TimelineMax();
+              start3 = new TimelineMax;
               var rect3 = document.querySelector("#svgRect3");
 
 
 
                 start3.to(rect3, duration, {width: lineWidth, ease: Power0.easeNone});
-
 
         },
         offset:'200'
@@ -59,11 +60,12 @@
           var duration = 5,
               lineWidth = 100, 
               lineWidth2 = 2040, 
-              start4 = new TimelineMax();
+              start4 = new TimelineMax;
               var rect4 = document.querySelector("#svgRect4");
 
 
                 start4.to(rect4, duration, {width: lineWidth2, ease: Power0.easeNone});
+
 
   
         },
