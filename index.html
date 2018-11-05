@@ -24,7 +24,7 @@
             <svg id="beat1" class="heartBeat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.75 56.75">
                 <title>Heart Beat</title>
                 <clipPath id="lineClip">
-                    <rect id="svgRect" x="0" y="0" height="500" width="0"/>
+                    <rect id="svgRect" x="0" y="0" height="500" width="1"/>
                 </clipPath>
                 <g id="Layer_2" data-name="Layer 2" clip-path="url(#lineClip)">
                     <g id="heart_line" data-name="heart line">
@@ -35,7 +35,7 @@
             <svg id="beat2" class="heartBeat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1388.31 60.75">
                 <title>Heart Beat Clip</title>
                 <clipPath id="lineClip2">
-                        <rect id="svgRect2" x="0" y="0" height="500" width="100"/>
+                        <rect id="svgRect2" x="0" y="0" height="500" width="0"/>
                     </clipPath>
                 <g id="Layer_2" data-name="Layer 2" clip-path="url(#lineClip2)">
                 <g id="heart_line" data-name="heart line">
@@ -126,9 +126,12 @@
                 </g>
             </svg>
             <p id="since"class="tops">Since London’s temporary overdose prevention site opened in <span class="bold small">mid February</span></p>
-            <object id="people" type="image/svg+xml" data="">
-                <img src="fallback-image.png" alt="…">
-            </object>
+            <div id="topsSect">
+                <object id="people" type="image/svg+xml" data="images/people.svg"></object>
+                </object>
+                <object id="people2" type="image/svg+xml" data="images/people-big.svg">
+                </object>
+            </div>
             <p class="center"><span class="bold big red">2000</span> people have visited <span class="bold big">8000</span> times</p>
         
             <object id="hearts" type="image/svg+xml" data="">
@@ -231,6 +234,7 @@
 <script src="js/main.js"></script>
 <script src="js/responsive.js"></script>
 <script src="js/heartbeat.js"></script>
+<script src="js/people.js"></script>
 <script src="js/animate-on-load.js"></script>
 </body>
 

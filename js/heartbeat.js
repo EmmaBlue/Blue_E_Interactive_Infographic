@@ -5,63 +5,72 @@
     function move1() {
         console.log("move1 function!");
 
-        var duration = 5,
-            lineWidth = 100, 
-            lineWidth2 = 2240, 
+        var duration = 2,
+            duration2 = 3,
+            lineWidth = 767,
+            lineWidth2 = 2000, 
             start = new TimelineMax();
-            start1 = new TimelineMax();
+            start2 = new TimelineMax();
 
         var rect1 = document.querySelector("#svgRect"),
-            rect2 = document.querySelector("#svgRect2");
+            rect2 = document.querySelector("#svgRect2"),
+            mobileVers = document.querySelector("#beat1"),
+            fullVers = document.querySelector("#beat2");
+
+            console.log(mobileVers.display);
+            console.log(fullVers);
 
 
-        start.to(rect1, duration, {width: lineWidth, ease: Power0.easeNone});
-        start1.to(rect2, duration, {width: lineWidth2, ease: Power0.easeNone});
+                start.to(rect1, duration, {width: lineWidth, ease: Power0.easeNone});
+
+
+                start2.to(rect2, duration2, {width: lineWidth2, ease: Power0.easeNone});
+               
 
     }
 
     var waypoint = new Waypoint({
         element: document.querySelector('#beat3'),
-        handler: function() {
+        handler: function(direction) {
           console.log("Basic waypoint triggered");
           console.log("move2 function!");
 
           var duration = 5,
-              lineWidth = 100, 
-              lineWidth2 = 2040, 
-              start2 = new TimelineMax();
+              lineWidth = 767, 
+              lineWidth2 = 2000, 
               start3 = new TimelineMax();
               var rect3 = document.querySelector("#svgRect3");
-              var rect4 = document.querySelector("#svgRect4");
-  
-          start2.to(rect3, duration, {width: lineWidth, ease: Power0.easeNone});
-          start3.to(rect4, duration, {width: lineWidth2, ease: Power0.easeNone});
+
+
+
+                start3.to(rect3, duration, {width: lineWidth, ease: Power0.easeNone});
+
+
         },
-        offset:'30%'
+        offset:'200'
       })
 
-        var waypoint = new Waypoint({
-        element: document.querySelector('#beat3'),
-        handler: function() {
+        var waypoint2 = new Waypoint({
+        element: document.querySelector('#beat4'),
+        handler: function(direction) {
           console.log("Basic waypoint triggered");
           console.log("move2 function!");
 
           var duration = 5,
               lineWidth = 100, 
               lineWidth2 = 2040, 
-              start2 = new TimelineMax();
-              start3 = new TimelineMax();
-              var rect3 = document.querySelector("#svgRect3");
+              start4 = new TimelineMax();
               var rect4 = document.querySelector("#svgRect4");
+
+
+                start4.to(rect4, duration, {width: lineWidth2, ease: Power0.easeNone});
+
   
-          start2.to(rect3, duration, {width: lineWidth, ease: Power0.easeNone});
-          start3.to(rect4, duration, {width: lineWidth2, ease: Power0.easeNone});
         },
-        offset:'30%'
+        offset:'200'
       })
 
     move1();
-    //move2();
     
 
 
