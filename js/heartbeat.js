@@ -9,16 +9,10 @@
             duration2 = 3,
             lineWidth = 767,
             lineWidth2 = 2000, 
+            rect1 = document.querySelector("#svgRect"),
+            rect2 = document.querySelector("#svgRect2");
             start = new TimelineMax({paused: true});
             start2 = new TimelineMax({paused: true});
-
-        var rect1 = document.querySelector("#svgRect"),
-            rect2 = document.querySelector("#svgRect2"),
-            mobileVers = document.querySelector("#beat1"),
-            fullVers = document.querySelector("#beat2");
-
-            console.log(mobileVers.display);
-            console.log(fullVers);
 
 
                 start.to(rect1, duration, {width: lineWidth, ease: Power0.easeNone}, 2);
