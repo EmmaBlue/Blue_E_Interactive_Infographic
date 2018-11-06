@@ -8,6 +8,8 @@
 .heartBeat {
 
     width: 100%;
+    min-width: 100%;
+    min-height: 100%;
 
     .cls-1  {
         fill:none;
@@ -145,7 +147,7 @@
     #mainHeading {
 
         font-size: 3.25em;
-        margin-top: 2em;
+        margin-top: 3em;
     }
 
 }

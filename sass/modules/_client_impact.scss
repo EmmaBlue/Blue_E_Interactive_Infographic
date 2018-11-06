@@ -250,13 +250,28 @@
         margin-top: 1em;
     }
     
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1017px) {
+
     .socCircles {
 
         padding-left: 20%;
         padding-right: 10%;
     }
-
 }
+
+@media screen and (min-width: 1018px)  {
+
+    .socCircles {
+
+        padding-left: 15%;
+        padding-right: 10%;
+    }
+}
+
 
 @media screen and (min-width:1024px) {
 
