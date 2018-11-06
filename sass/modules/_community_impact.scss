@@ -60,6 +60,41 @@
     }
 }
 
+
+
+#last {
+
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+
+    #commSect {
+
+        padding-left: 5%;
+    }
+
+    #sydneySect {
+
+        p {
+
+            font-size: 1.2em;
+            line-height: 1.75em;
+        }
+
+        ul li {
+
+            font-size: 1.2em;
+        }
+    }
+
+    #last {
+
+        font-size: 1.2em;
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     #commSect {
