@@ -85,9 +85,11 @@
     handler: function(direction) {
         console.log("scrolled to element!", this.element);
         var clientAccess = document.querySelector("#clientSect").querySelector('#clientAccess');
+        var arrow = document.querySelector("#clientSect").querySelector('#arrowLast');
 
         animate(this.element);
-        animate3(clientAccess);
+        animate2(clientAccess);
+        animate2(arrow);
       
     },
     offset: 200

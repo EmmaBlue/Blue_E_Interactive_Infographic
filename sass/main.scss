@@ -15,6 +15,21 @@
   box-sizing: inherit;
 }
 
+#lineClip {
+
+-webkit-clip-path: url(#lineClip);
+clip-path: url(#lineClip);
+
+}
+
+#lineClip2 {
+
+    -webkit-clip-path: url(#lineClip2);
+    clip-path: url(#lineClip2);
+}
+
+
+
 .none {
 
     opacity: 0;
@@ -104,7 +119,7 @@ h1, h2 {
     text-align: center;
     margin: 20px;
     font-family: $font-accent;
-    font-style: bold;
+    font-weight: bold;
     font-size: 1.5em;
     color: $font-color;
 }
