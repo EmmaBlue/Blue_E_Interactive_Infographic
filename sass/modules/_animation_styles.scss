@@ -1,12 +1,5 @@
-/*#mainHeading.animated.fadeInUp {
-    animation-duration: 0.5s;
 
-    span.animated.fadeInRight {
-
-        animation-duration:1s;
-    }
-  }*/
-
+// Front Page Staggered Animations
 
 #factsp.animated.fadeInUp {
 
@@ -32,3 +25,12 @@
         animation-delay: 7s; 
     }
   }
+
+// Mobile heart beat SVG styles
+
+#beat1 {
+    -webkit-clip-path: polygon(0% 0%, 58% 0%, 39% 81.8%, 0% 81.8%);
+    clip-path: polygon(0% 0%, 58% 0%, 39% 81.8%, 0% 81.8%);
+    -webkit-clip-path: url("#clip-shape"); 
+    clip-path: url("#clip-shape");
+ }

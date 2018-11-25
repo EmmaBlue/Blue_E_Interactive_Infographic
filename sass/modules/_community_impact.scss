@@ -1,4 +1,6 @@
-#commSect {
+// Business owners reported section styles
+
+#bizSect {
 
     padding-left: 10px;
     padding-right: 10px;
@@ -24,17 +26,18 @@
     width: 20%;
 }
 
+// Sydney citation section styles
+
+.flex-columns {
+    flex-direction: column;
+    display: flex;
+}
+
 .store {
 
     margin-left: 20px;
     margin-right: 20px;
     height: 100px;
-}
-
-
-.flex-columns {
-    flex-direction: column;
-    display: flex;
 }
 
 #sydneySect {
@@ -68,9 +71,105 @@
     margin-top: 1em;
 }
 
+// Display 71%, 56% and arrow as block on mobile
+
+@media screen and (max-width: 767px) {
+
+    .socSect.socCircles.flex {
+
+        display: block;
+        align-items: center;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-bottom: 2em;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+// Business Owners Reported Tablet Up Queries
+
+@media screen and (min-width: 620px) and (max-width: 1999px) {
+
+    .socSect.socCircles.flex {
+
+        .circleSect {
+
+            display: flex;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1017px) {
+
+    .socCircles {
+
+        padding-left: 20%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (min-width: 1018px)  {
+
+    .socCircles {
+
+        padding-left: 15%;
+        padding-right: 10%;
+    }
+}
+
+
+@media screen and (min-width: 620px) and (max-width: 1200px) {
+
+    .socSect.socCircles.flex {
+
+        flex-wrap: wrap;
+
+        .circleSect {
+
+            width: 40%;
+        }
+
+        #arrowSect.circleSect {
+
+            width: 80%;
+
+            p.justify {
+
+                flex: 1;
+            }
+
+            .down-arrow.justify {
+
+                flex:0.2;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    #reductionSect {
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .down-arrow {
+
+        width: 5em;
+        margin-left: 20px;
+    }
+}
+
+
+// Sydney Citation Tablet Up Queries
+
 @media screen and (min-width: 1024px) {
 
-    #commSect {
+    #bizSect {
 
         padding-left: 5%;
     }
@@ -97,9 +196,7 @@
 
 @media screen and (min-width: 768px) {
 
-    #commSect {
-
-
+    #bizSect {
 
         .flex .flex-columns {
 
@@ -127,19 +224,5 @@
 
         height: 200px;
         width: 200px;
-    }
-}
-@media screen and (min-width:768px) {
-
-    #reductionSect {
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    .down-arrow {
-
-        width: 5em;
-        margin-left: 20px;
     }
 }

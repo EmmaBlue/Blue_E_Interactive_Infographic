@@ -3,7 +3,6 @@
     //grab the boxes
     const opBoxes = document.querySelectorAll('.box');
 
-
     function fetchData() {
         //this.id gives you id of box that you've clicked on 
         fetch(`./includes/connect.php?nameID=${this.id}`)
@@ -29,9 +28,10 @@
         //destructure the database info and grab just what we need 
         const {name, img_path} = nameID,
         section = document.querySelector("#roomSect");
-        //take the database data and put it on the page 
+        //take the database data and put it in the room section
             let svg = document.createElement("IMG");
             svg.classList.add("roomSVG");
+            //add animations
             svg.classList.add("animated");
             svg.classList.add("fadeIn");
             svg.src = img_path;

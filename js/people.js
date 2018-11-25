@@ -1,14 +1,12 @@
 
 (() => {
     const topEl = document.querySelector("#topsSect");
-    console.log("hello");
 
-    // define a  waypoint and run some animation
+    // define a  waypoint so animation starts when scroll to mobile-sized people svg
     var waypoint = new Waypoint({
         element: document.querySelector("#topsSect").querySelector('#people'),
         handler: function(direction) {
             console.log("scrolled to element!", this.element);
-
 
             if (this.element.offsetHeight > 0 ) {
 
@@ -19,7 +17,7 @@
         offset: 220
     });
 
-     // define a  waypoint and run some animation
+     // define a  waypoint so animation starts when scroll to full-sized people svg
      var waypoint = new Waypoint({
         element: document.querySelector("#topsSect").querySelector('#people2'),
         handler: function(direction) {
@@ -41,9 +39,7 @@
         innerSVG = parent.contentDocument; // svg inside of the object tag
         console.log(innerSVG);
 
-
-
-        // run an animation with Greensock
+        // run animation with Greensock
         elements.forEach(el => {
             let target = innerSVG.querySelectorAll(`.${el}`);
             console.log(target);

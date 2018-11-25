@@ -3,28 +3,17 @@
     text-align:center;
 }
 
-@media screen and (min-width: 768px) {
+#hearts, #heartsFull {
 
-    #topsFullSect {
-
-        .center{
-    
-            margin-top: 1.5em;
-            margin-bottom: 1.5em;
-            font-size: 1.5em;
-        }
-
-        #reversed.center {
-    
-            margin-bottom: 0em;
-            margin-top: 1.5em;
-            font-size: 1.5em;
-       
-        }
-    }
-
-
+    width: 80%;
+    min-width:80%;
+    min-height: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
 }
+
 
 #since {
 
@@ -34,13 +23,6 @@
     margin-top: 1em;
 }
 
-@media screen and (min-width: 768px) {
-
-    #since {
-
-        margin-bottom: 2em;
-    }
-}
 
 #people, #people2 {
 
@@ -52,6 +34,8 @@
     margin-top: 1em;
     margin-bottom: 1.5em;
 }
+
+// Show mobile image sizes on mobile 
 
 
 @media screen and (max-width: 767px) {
@@ -81,7 +65,19 @@
 
         display: none;
     }
+
+    #hearts {
+
+        display: block;
+    }
+
+    #heartsFull {
+
+        display: none;
+    }
 }
+
+// Show desktop image sizes on tablet up 
 
 @media screen and (min-width: 768px) {
 
@@ -114,19 +110,51 @@
 
         display: block;
     }
+
+    #hearts {
+
+        display: none;
+    }
+
+    #heartsFull {
+
+        display: block;
+    }
 }
 
+// Media Queries for Margin, Padding and Font Size
 
-#hearts {
+@media screen and (min-width: 768px) {
 
-    width: 80%;
-    min-width:80%;
-    min-height: 80%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 1.25em;
-    margin-bottom: 0.5em;
+    #since {
+
+        margin-bottom: 2em;
+    }
 }
+
+@media screen and (min-width: 768px) {
+
+    #topsFullSect {
+
+        .center{
+    
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+            font-size: 1.5em;
+        }
+
+        #reversed.center {
+    
+            margin-bottom: 0em;
+            margin-top: 1.5em;
+            font-size: 1.5em;
+       
+        }
+    }
+
+
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -146,7 +174,7 @@
         margin-bottom: 2em;
     }
 
-    #hearts {
+    #heartsFull {
 
         margin-bottom: 2em;
         margin-top: 2em;

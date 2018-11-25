@@ -1,14 +1,11 @@
 
   (() => {
 
-    var test = document.querySelector("#topsFullSect").querySelector('#visits');
-    console.log(test);
-
-
     function animate (element) {
 
-        console.log("animate 1");
+        console.log("animate");
 
+        //Display element and animate it
         element.classList.remove("none");
         element.classList.add("animated");
         element.classList.add("fadeIn");
@@ -17,29 +14,31 @@
 
     function animate2 (element) {
 
-        console.log("animate 2");
+        console.log("animate 2 seconds");
 
+         //Display element and animate it
         element.classList.remove("none");
         element.classList.add("animated");
         element.classList.add("fadeIn");
         element.classList.add("delay-2s");
     }
 
-    function animate3 (element) {
+    function animate4 (element) {
 
-        console.log("animate 3");
+        console.log("animate 4 seconds");
 
+         //Display element and animate it
         element.classList.remove("none");
         element.classList.add("animated");
         element.classList.add("fadeIn");
-        element.classList.add("delay-3s");
+        element.classList.add("delay-4s");
     }
-
 
     function animate5 (element) {
 
-        console.log("animate 5");
+        console.log("animate 5 seconds");
 
+         //Display element and animate it
         element.classList.remove("none");
         element.classList.add("animated");
         element.classList.add("fadeIn");
@@ -52,11 +51,11 @@
       element: document.querySelector("#opsSect"),
       handler: function(direction) {
           console.log("scrolled to element!", this.element);
-     
           var not = document.querySelector("#opsSect").querySelector('#not');
-            animate(this.element);
-    
-            animate2(not);
+          //Animate in section 
+          animate(this.element);
+          //Stagger animation of paragraph within section
+          animate2(not);
         
       },
       offset: 200
@@ -69,12 +68,28 @@
         console.log("scrolled to element!", this.element);
         var visits = document.querySelector("#topsFullSect").querySelector('#visits');
         var hearts = document.querySelector("#topsFullSect").querySelector('#hearts');
+        var heartsFull = document.querySelector("#topsFullSect").querySelector('#heartsFull');
         var reversed = document.querySelector("#topsFullSect").querySelector('#reversed');
 
-            animate(this.element);
-            animate2(visits);
-            animate5(hearts);
-            animate5(reversed);
+        //Animate in section
+        animate(this.element);
+        //Stagger animation of paragraph within section
+        animate2(visits);
+        //Stagger animation of image within section
+        let compStyles = window.getComputedStyle(hearts);
+        // If mobile image displayed, animate it
+        if (compStyles.getPropertyValue('display') === 'block') {
+
+          animate4(hearts);
+      }
+        // Else animate full version of image
+        else {
+
+            animate4(heartsFull);
+        }
+        
+        //Stagger animation of paragraph within section
+        animate4(reversed);
       
     },
     offset: 200
@@ -85,27 +100,31 @@
     handler: function(direction) {
         console.log("scrolled to element!", this.element);
         var clientAccess = document.querySelector("#clientSect").querySelector('#clientAccess');
-        var arrow = document.querySelector("#clientSect").querySelector('#arrowLast');
-
+        //Animate in section
         animate(this.element);
-        animate2(clientAccess);
-        animate2(arrow);
+        //Stagger animation of paragraph within section
+        animate(clientAccess);
       
     },
     offset: 200
   });
 
-  var waypoint3 = new Waypoint({
+  var waypoint4 = new Waypoint({
     element: document.querySelector("#communitySect"),
     handler: function(direction) {
         console.log("scrolled to element!", this.element);
-        var commSect = document.querySelector("#communitySect").querySelector('#commSect');
+        var bizSect = document.querySelector("#communitySect").querySelector('#bizSect');
+        var arrow = document.querySelector("#clientSect").querySelector('#arrowLast');
 
+         //Animate in section
         animate(this.element);
-        animate2(commSect);
+        //Stagger animation of image within section
+        animate2(arrow);
+        //Stagger animation of section within section
+        animate2(bizSect);
       
     },
-    offset: 300
+    offset: 200
   });
 
 

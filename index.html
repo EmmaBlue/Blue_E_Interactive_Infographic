@@ -10,21 +10,22 @@
         <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-
         <title>These Sites Save Lives</title>
 </head>
 <body>
     <main id="main">
         <h1 class="hidden">Supervised Consumption Sites Site</h1>
+        <!--Start Intro Section -->
         <section id="firstSect"> 
             <h2 class="animated fadeInUp" id="mainHeading">These sites save <span class="red animated delay-1s fadeInDown">lives.</span></h1>
             <h2 class="hidden">London Opioid Crisis Stats</h2>
+            <!--Start Heart Beat Images for Mobile and Desktop-->
             <svg id="beat1" class="heartBeat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.75 56.75">
                 <title>Heart Beat</title>
                 <clipPath id="lineClip">
                     <rect id="svgRect" x="0" y="0" height="500" width="1"/>
                 </clipPath>
-                <g id="Layer_2" data-name="Layer 2" clip-path="url(#svgRect)">
+                <g id="Layer_2" data-name="Layer 2" clip-path="url(#lineClip)">
                     <g id="heart_line" data-name="heart line">
                         <polyline class="cls-1" points="0.88 24.88 100.54 24.88 105.91 11.88 110.2 41.88 112.35 24.88 116.64 24.88 119.86 7.88 127.38 39.88 133.82 24.88 140.26 24.88 141.33 21.88 144.55 31.88 146.7 24.88 150.99 32.88 157.43 7.88 160.65 46.88 163.87 20.88 167.09 24.88 185.34 24.88 189.64 13.88 196.08 40.88 202.52 0.88 207.88 25.88 213.25 20.88 220.76 50.88 229.35 6.88 239.01 51.88 240.09 24.88 257.26 24.88 258.33 47.88 262.63 22.88 268 34.88 271.21 27.88 274.44 38.88 277.66 33.88 280.88 38.88 286.24 15.88 292.68 55.88 294.83 24.88 302.34 24.88 307.71 24.88 309.86 32.88 313.08 21.88 324.89 49.88 332.4 8.88 339.91 34.88 343.13 30.88 348.5 50.88 351.72 14.88 354.94 24.88 367.82 24.88 372.12 8.88 380.7 34.88 383.92 21.88 393.58 51.88 402.17 9.88 402.17 9.88 407.88 24.88"/>
                     </g>
@@ -43,6 +44,7 @@
                 </g>
                 </g>
             </svg>
+            <!--End Heart Beat Images for Mobile and Desktop-->
             <div class="turn-flex widen">
                 <section class="frontSect animated fadeIn delay-4s">
                     <h2 class="hidden">London is 3rd Highest Rate of Opioid Overdose</h2>
@@ -60,43 +62,47 @@
             <p id="scrollText" class="animated fadeInUp"> <span class="line">Want to find out?</span> Scroll down for more</p>
             <i id="scrollArrow" class="fas fa-angle-down animated fadeInUp"></i>
         </section>
-
+         <!--End Intro Section-->
+         <!--Start What SCS Look Like Section-->
         <section class="none" id="opsSect">
             <h2 class="sectionHeading">Supervised consumption sites are a place to</h2>
             <div id="row" class="turn-flex">
-                <section class="" id="roomSect">
+                <!--roomSect populates with SVGs when user clicks boxes-->
+                <section id="roomSect">
                     <h2 class="hidden">Interactive Consumption Site</h2>
                     <img id="room" class="roomSVG" src="images/room.svg" alt="room" width="100%">
                 </section>
-                <div class="" id="grid">
+                <div id="grid">
                     <section id="bring" class="box">
-                        <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
+                        <h2 class="hidden">Bring drugs</h2>
                         <p class="bold">Bring drugs obtained <span id="before">before</span> coming to the site </p>
                     </section>
                     <section id="equipment" class="box border-red">
-                        <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
+                        <h2 class="hidden">Receive clean equip</h2>
                         <p class="bold">Receive clean needles and other sterile equipment </p>
                     </section>
                     <section id="doctor" class="box border-red">
-                        <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
+                        <h2 class="hidden">Get advice</h2>
                         <p class="bold">Get advice from medical professionals on how to use safely</p>
                     </section>
                     <section id="healthcare" class="box">
-                        <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
+                        <h2 class="hidden">Get healthcare</h2>
                         <p class="bold">Get healthcare if an overdose happens</p>
                     </section>
                     <section id="cozy" class="box">
-                        <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
+                        <h2 class="hidden">Use drugs without fear</h2>
                         <p class="bold">Use drugs without fear of being arrested</p>
                     </section>
                     <section id="social-worker" class="box border-red">
-                        <h2 class="hidden">Supervised Consumption Site Activities Desc</h2>
+                        <h2 class="hidden">Get referrals</h2>
                         <p class="bold">Get referrals to services like therapy, rehab and more</p>
                     </section>
                     </div>
                 </div>
             <p class="none" id="not">Supervised consumption sites are <span class="red big">not</span> a place to buy or receive drugs.</p>
         </section>
+        <!--End What SCS Look Like Section-->
+        <!--Start TOPS Stats Section-->
         <section class="none" id="topsFullSect">
             <h2 class="hidden">London Temporary Overdose Prevention Site Stats</h2>
             <div id="topsWhole">
@@ -113,12 +119,15 @@
                 </object>
             </div>
             <p id="visits" class="center none"><span class="bold big red">2000</span> people have visited <span class="bold big">8000</span> times</p>
-        
-            <object id="hearts" type="image/svg+xml" data="">
+            <object id="hearts" type="image/svg+xml" data="./images/hearts.svg">
+            </object>
+            <object id="heartsFull" type="image/svg+xml" data="./images/hearts-big.svg">
             </object>
             <p id="reversed" class="center">Staff have <span class="bold small">reversed </span><span class="bold big red">37</span><span class="bold small"> overdoses</span></p>
             <i id="arrow-two" class="fas fa-angle-down animated infinite pulse"></i>
         </section>
+        <!--End TOPS Stats Section-->
+        <!--Start Client Stats Section-->
         <section id="clientSect" class="none">
             <h2>How do these sites impact people who use drugs?</h2>
             <p class="intro center">According to research done on InSite, a supervised consumption site in Vancouver that's existed <span class="bold red small">since 2003</span></p>
@@ -144,19 +153,19 @@
                 <section class="circleSect turn-flex">
                     <h2 class="hidden">Social Service Access Stats</h2>
                     <object id="ninety-four" class="percent-circle" type="image/svg+xml" data="images/ninety-four.svg">
-                        <img src="fallback-image.png" alt="ninety-four">
                     </object>
                     <p class="center loading">of clients accessed non medical services on site</p>
                 </section>
                 <section class="circleSect turn-flex">
                     <h2 class="hidden">Social Service Access Stats</h2>
                     <object class="percent-circle second" type="image/svg+xml" data="images/forty-four.svg">
-                        <img src="fallback-image.png" alt="forty-four">
                     </object>
                     <p class="center loading">of clients accessed medical services on site</p>
                 </section>
             </div>
         </section>
+        <!--End Client Stats Section-->
+        <!--Start Community Stats Section-->
         <section id="communitySect" class="none">
             <h2>How do these sites affect the community?</h2>
             <p class="intro center">Out of the <span class="red bold small">75%</span> of clients who reported a change in their injecting because of InSite </p>
@@ -164,14 +173,12 @@
                 <section class="circleSect flex">
                     <h2 class="hidden">Community Safety Stats</h2>
                     <object class="percent-circle" type="image/svg+xml" data="images/seventy-one.svg">
-                        <img src="fallback-image.png" alt="forty-four">
                     </object>
                     <p class="center loading">reported fewer public injections</p>
                 </section>
                 <section class="circleSect flex">
                     <h2 class="hidden">Community Safety Stats</h2>
                     <object id="fifty-six" class="percent-circle" type="image/svg+xml" data="images/fifty-six.svg">
-                        <img src="fallback-image.png" alt="fifty-six">
                     </object>
                     <p class="center loading">reported less unsafe needle disposal</p>
                 </section>
@@ -179,19 +186,16 @@
                     <h2 class="hidden">InSite's effect on needle waste </h2>
                     <p class="justify">InSite caused more than a <span class="red bold fifty"> 50% </span><span><span class="bold">reduction in discarded needles</span> discovered in Vancouver's downtown </span>east side</p>
                     <object class="down-arrow justify" type="image/svg+xml" data="images/down-arrow.svg">
-                        <img src="fallback-image.png" alt="fifty-six">
                     </object>
                 </section>
             </div>
-            <section id="commSect" class="none">
+            <section id="bizSect">
                 <h2 class="hidden">Local Business Owner Anecdotes</h2>
                 <div class="flex">
                     <div class="flex-columns">
                         <object class="store" type="image/svg+xml" data="images/red-store.svg">
-                                <img src="fallback-image.png" alt="fifty-six">
                         </object>
                         <object class="store" type="image/svg+xml" data="images/grey-store.svg">
-                                <img src="fallback-image.png" alt="fifty-six">
                         </object>
                     </div>
                     <div id="sydneySect">
@@ -205,15 +209,14 @@
             <p id="last" class="center loading">and <span class="bold small">no change</span> in drug-related criminal offences in the neighbourhood.</p>
          </section>
         </section>
+        <!--End Community Stats Section-->
     </main>
 
 <!--javascript includes-->
-<script src="js/main.js"></script>
-<script src="js/responsive.js"></script>
+<script src="js/room.js"></script>
 <script src="js/heartbeat.js"></script>
 <script src="js/people.js"></script>
-<script src="js/loading.js"></script>
-<script src="js/animate-on-load.js"></script>
+<script src="js/load-sections.js"></script>
 </body>
 
 </html>

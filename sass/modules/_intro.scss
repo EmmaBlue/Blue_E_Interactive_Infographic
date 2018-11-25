@@ -11,6 +11,8 @@
     min-width: 100%;
     min-height: 100%;
 
+    // heartBeat SVG styles
+
     .cls-1  {
         fill:none;
         stroke:#000;
@@ -21,8 +23,6 @@
 
 
 }
-
-
 
 //Switching Heartlines Depending on Screen Size
 
@@ -61,7 +61,7 @@
     }
 }
 
-
+// End Switching Heartbeats 
 
 .frontSect {
 
@@ -112,16 +112,18 @@
     font-size: 0.875em;
 }
 
+.line {
+
+    display: block;
+}
+
+//Arrow Styles
+
 .fas {
 
     margin-left: 50%;
     font-size: 1.75em;
     margin-top: 5px;
-}
-
-.line {
-
-    display: block;
 }
 
 /* Tablet and Desktop Media Queries*/

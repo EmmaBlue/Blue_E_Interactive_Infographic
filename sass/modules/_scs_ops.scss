@@ -11,6 +11,8 @@
     display: block;
 }
 
+/* Box Grid Styles */
+
 #grid {
 
     display:grid;
@@ -42,6 +44,8 @@
 
     background-color: #D53D3D;
 }
+
+/* Heading Styles */
 
 #before {
 
@@ -116,7 +120,7 @@
     z-index: 2;
 }
 
-/* Room Animation Styles for Ipad+*/
+/* Room Animation Styles for Ipad */
 
 @media screen and (min-width: 768px) {
 
@@ -170,31 +174,6 @@
         z-index: 2;
     }
 }
-
-
-/*@media screen and (min-width:768px) {
-
-    #room {
-
-        margin-left: 10%;
-    }
-
-    #grid {
-
-        margin-right: 10%;
-    }
-
-    .sectionHeading {
-
-        margin-bottom: 40px;
-    }
-
-    #not {
-
-        font-size: 1.75em;
-    }
-
-}*/
 
 @media screen and (min-width: 768px) {
 

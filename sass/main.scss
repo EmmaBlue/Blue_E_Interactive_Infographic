@@ -1,6 +1,6 @@
 @import 'modules/_vars';
-@import 'modules/_london_facts';
-@import 'modules/_site_animation';
+@import 'modules/_intro';
+@import 'modules/_scs_ops';
 @import 'modules/_tops';
 @import 'modules/_client_impact';
 @import 'modules/_community_impact';
@@ -15,25 +15,15 @@
   box-sizing: inherit;
 }
 
-#lineClip {
 
--webkit-clip-path: url(#lineClip);
-clip-path: url(#lineClip);
-
-}
-
-#lineClip2 {
-
-    -webkit-clip-path: url(#lineClip2);
-    clip-path: url(#lineClip2);
-}
-
-
+// Style for waypoint animations
 
 .none {
 
     opacity: 0;
 }
+
+// End Style for waypoint animations
 
 
 .hidden {
@@ -79,23 +69,6 @@ clip-path: url(#lineClip);
     align-items: flex-start;
 }
 
-@media screen and (min-width: 768px) {
-
-    #row.turn-flex  {
-
-        display: flex;
-        margin: auto;
-        max-width: 900px;
-    }
-
-    .turn-flex  {
-
-        display: flex;
-    }
-
-}
-
-
 object {
 
     width: 100%;
@@ -124,6 +97,8 @@ h1, h2 {
     color: $font-color;
 }
 
+// Increase Headings Query
+
 @media screen and (min-width: 768px) {
 
     h1, h2 {
@@ -131,5 +106,23 @@ h1, h2 {
         font-size: 2em;
     }
 
+
+}
+
+// Turn element flex on tablet view query
+
+@media screen and (min-width: 768px) {
+
+    #row.turn-flex  {
+
+        display: flex;
+        margin: auto;
+        max-width: 900px;
+    }
+
+    .turn-flex  {
+
+        display: flex;
+    }
 
 }

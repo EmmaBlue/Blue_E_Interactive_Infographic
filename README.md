@@ -1,10 +1,13 @@
 # Supervised Consumption Sites Infographic 
 
-Our one page infographic website on London, Ontario's opioid crisis and supervised consumption sites.
+![](images/scs-readme.png)
+
+My one page infographic website on London, Ontario's opioid crisis and supervised consumption sites.
 
 ## Features
 
-* Animation
+* Responsive Greensock Animations 
+* Interactive "Supervised consumption sites are a place to" section
 
 ## Getting Started
 
@@ -13,31 +16,27 @@ Our one page infographic website on London, Ontario's opioid crisis and supervis
 To locally host this website, you’ll need Git installed on your computer.
 [See detailed install instructions here.](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
 
+You'll also need to access PHPMyAdmin to import the scs database and view the second section of the site.
+
 ### Installing
 
-From the command line:
+After cloning this repository 
 
-```# Initialize git
+#### 1. Navigate to db and download db_scs.sql 
 
-$ git init
+#### 2. Go to your PHPMyAdmin and create a shell database
 
-# Clone this repository
+#### 3. Import db_scs.sql 
 
-$ git clone https://github.com/EmmaBlue/Blue_E_Interactive_Infographic.git
-
-# Go into the repository
-
-$ cd Blue_E_Interactive_Infographic
-
-```
-
-And you’re done!
+And you’re done and ready to view!
 
 ## Built With
 
+* [Greensock](https://greensock.com/) - Used for animations
+* [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - Used for "Supervised        consumption sites are a place to" section
+* [Waypoints](http://imakewebthings.com/waypoints/) - Used for animations that initialize on scroll
 * [CSS Grid](https://cssreference.io/css-grid/)
 * [CSS Flexbox](https://cssreference.io/flexbox/)  
-* [Greensock](https://greensock.com/) - Used for animation
 
 ## Authors
 
