@@ -38,6 +38,14 @@ And you’re done and ready to view!
 * [CSS Grid](https://cssreference.io/css-grid/)
 * [CSS Flexbox](https://cssreference.io/flexbox/)  
 
+## To-Do List
+
+- [ ] Rewrite with Webpack 
+- [ ] Fix Firefox heartline animation error by rewriting heartbeat.js with jQuery and animate attr, since Firefox doesn't support clipPath animations
+- [ ] Create JS function so user can scroll over each stat and see a link to the citation 
+- [ ] Add sources section at the bottom 
+- [ ] Add a section with a text script the user can use when calling or emailing their local MPP to express support for London's current temporary overdose prevention site  
+
 ## Authors
 
 * [**Emma Blue**](https://github.com/EmmaBlue) - *Developer, Writer and Designer*
